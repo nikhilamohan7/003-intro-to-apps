@@ -7,9 +7,9 @@ import plotly.graph_objs as go
 
 ########### Define your variables
 beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-ibu_values=[40, 80, 90, 65]
+ibu_values=[45, 70, 95, 100]
 abv_values=[5.4, 7.1, 9.2, 4.3]
-color1='darkred'
+color1='blue'
 color2='orange'
 mytitle='Beer Comparison'
 
@@ -46,5 +46,5 @@ def make_that_cool_barchart(beers, ibu_values, abv_values, color1, color2, mytit
 
 if __name__ == '__main__':
     fig = make_that_cool_barchart(beers, ibu_values, abv_values, color1, color2, mytitle)
-    fig.write_html('docs/barchart.html')
+    fig.write_html('docs/barchartnew.html')
     print('We successfully updated the barchart!')
